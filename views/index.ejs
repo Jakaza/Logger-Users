@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Logger</title>
+  </head>
+  <bod>
+
+    <h1>Logger Page</h1>
+    <% logs.forEach( log => {%>
+    <p>User ID : <%=log.user %></p>
+    <p>Visits : <%= log.count %></p>
+    <p>last visit : <%= log.timestamp%></p>
+    <% }) %>
+  </bod>
+  
+</html>
