@@ -80,7 +80,7 @@ app.use(morgan('combined'))
 app.get('/', async (req, res) => {
   const logs = await Log.find({})
   console.log(logs)
-  res.render('index', {logs})
+  res.render('index', { logs })
 });
 
 app.listen(3000, () => {
